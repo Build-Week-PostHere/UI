@@ -140,23 +140,62 @@ body h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 10%;
   font-size: 4rem;
+  margin-top: 5%;
+}
+body h2 {
+  font-size: 4vh;
+  margin-top: 10%;
 }
 body h3 {
   display: flex;
   justify-content: center;
-  margin-top: -5%;
+  margin-top: 10%;
   margin-bottom: 5%;
+  font-size: 3vh;
 }
-body div .namebox {
+body .pagemeat {
+  display: flex;
+  justify-content: center;
+}
+body .pagemeat p {
+  background: 5px orangered;
+  border-radius: 44px;
+  margin: 5%;
+  opacity: 0.8;
+  width: 30%;
+  text-align: center;
+}
+body .pagemeat img {
+  height: 30vh;
+}
+.nameTable {
+  justify-content: space-evenly;
+  width: 100%;
+}
+.nameTable h1 {
+  display: flex;
+}
+.namebox {
   display: flex;
   flex-direction: column;
-  margin: 5%;
-  margin-top: 20%;
+  margin: 2%;
+  align-items: center;
 }
-body .nameTable {
-  display: flex;
+.namebox h2 {
+  border: 2px solid red;
+  border-radius: 44px;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .pagemeat {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin: 5%;
+  }
 }
 nav {
   display: flex;
@@ -165,9 +204,20 @@ nav {
 }
 .bottombutton {
   border-radius: 44px;
-  border-style: none;
-  width: 10%;
-  height: 10%;
+  font-size: 1rem;
+  padding: 3.5%;
+  border: none;
+  width: 300px;
   background-color: orangered;
   color: white;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .bottombutton {
+    margin: 2%;
+    justify-content: center;
+  }
 }
